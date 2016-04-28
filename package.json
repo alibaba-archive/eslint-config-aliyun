@@ -1,0 +1,38 @@
+{
+  "name": "eslint-config-aliyun",
+  "version": "1.0.0",
+  "description": "ESLint shareable config for the Aliyun style",
+  "main": "index.js",
+  "keywords": [
+    "aliyun",
+    "code",
+    "quality",
+    "style",
+    "lint",
+    "linter",
+    "jscs",
+    "jshint",
+    "jslint",
+    "eslint",
+    "validate",
+    "code style",
+    "strict",
+    "check",
+    "checker",
+    "verify",
+    "enforce",
+    "hint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:HQidea/eslint-config-aliyun.git"
+  },
+  "author": "HQidea <hqidea@yahoo.com>",
+  "bugs": {
+    "url": "https://github.com/HQidea/eslint-config-aliyun/issues"
+  },
+  "homepage": "https://github.com/HQidea/eslint-config-aliyun",
+  "devDependencies": {
+    "eslint-plugin-react": "^5.0.1"
+  }
+}
