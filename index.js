@@ -35,7 +35,7 @@ module.exports = {
     ],
     "radix": [
       "error"
-    ]
+    ],
     /* Stylistic Issues */
     "indent": [
       "error",
