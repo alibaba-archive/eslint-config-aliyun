@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-aliyun",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "ESLint shareable config for the Aliyun style",
   "main": "index.js",
   "keywords": [

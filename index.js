@@ -160,10 +160,7 @@ module.exports = {
     /* ECMAScript 6 */
     "arrow-parens": [
       "error",
-      "as-needed",
-      {
-        "requireForBlockBody": true
-      }
+      "always"
     ],
     "arrow-spacing": [
       "error"
