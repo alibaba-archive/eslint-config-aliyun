@@ -19,11 +19,6 @@ Add some ESLint config to your `package.json`:
 	"scripts": {
 		"lint": "eslint ."
 	},
-	"devDependencies": {
-		"eslint": "^4.13.1",
-		"eslint-config-aliyun": "^2.0.0",
-		"eslint-plugin-react": "^7.5.1",
-	},
 	"eslintConfig": {
 		"extends": "aliyun"
 	}
