@@ -1,4 +1,5 @@
 module.exports = {
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": 'module',
@@ -174,7 +175,8 @@ module.exports = {
     "generator-star-spacing": [
       "error",
       "after"
-    ]
+    ],
+    "react/jsx-uses-vars": 1
   },
   "extends": "eslint:recommended"
 };
