@@ -99,7 +99,8 @@ module.exports = {
       "error",
       {
         "anonymous": "always",
-        "named": "never"
+        "named": "never",
+        "asyncArrow": "always"
       }
     ],
     "space-unary-ops": [
@@ -157,11 +158,19 @@ module.exports = {
     "no-array-constructor": [
       "error"
     ],
-    /* ECMAScript 6 */
-    "arrow-parens": [
+    "spaced-comment": [
       "error",
       "always"
     ],
+    "react/jsx-tag-spacing": [
+      "error",
+      {
+        "closingSlash": "never",
+        "beforeSelfClosing": "always",
+        "afterOpening": "never"
+      }
+    ],
+    /* ECMAScript 6 */
     "arrow-spacing": [
       "error"
     ],
@@ -176,5 +185,5 @@ module.exports = {
       "after"
     ]
   },
-  "extends": "eslint:recommended"
+  "extends": ["eslint:recommended", "plugin:react/recommended"]
 };
