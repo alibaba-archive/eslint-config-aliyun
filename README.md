@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save-dev eslint eslint-config-aliyun
+$ npm install --save-dev eslint eslint-config-aliyun eslint-plugin-react
 ```
 
 
@@ -18,10 +18,6 @@ Add some ESLint config to your `package.json`:
 {
 	"scripts": {
 		"lint": "eslint ."
-	},
-	"devDependencies": {
-		"eslint": "^2.7.0",
-		"eslint-config-aliyun": "^1.0.0"
 	},
 	"eslintConfig": {
 		"extends": "aliyun"
