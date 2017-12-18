@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save-dev eslint eslint-config-aliyun eslint-plugin-react
+$ npm install --save-dev eslint eslint-config-aliyun eslint-plugin-react babel-eslint
 ```
 
 
@@ -17,7 +17,7 @@ Add some ESLint config to your `package.json`:
 ```json
 {
 	"scripts": {
-		"lint": "eslint ."
+		"lint": "eslint --ext .js --ext .jsx --ignore-path .gitignore ."
 	},
 	"eslintConfig": {
 		"extends": "aliyun"
