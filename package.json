@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-aliyun",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "ESLint shareable config for the Aliyun style",
   "main": "index.js",
   "keywords": [
@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/HQidea/eslint-config-aliyun",
   "peerDependencies": {
+    "babel-eslint": "^8.0.0",
     "eslint": "^4.0.0",
     "eslint-plugin-react": "^7.0.0"
   }

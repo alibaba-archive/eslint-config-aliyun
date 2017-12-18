@@ -1,12 +1,18 @@
 module.exports = {
+  "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": 'module',
-    "ecmaFeatures": {
-      "impliedStrict": true,
-      "jsx": true,
-      "experimentalObjectRestSpread": true
-    }
+    /* espree options */
+    // "ecmaVersion": 6,
+    // "sourceType": 'module',
+    // "ecmaFeatures": {
+    //   "impliedStrict": true,
+    //   "jsx": true,
+    //   "experimentalObjectRestSpread": true
+    // }
+    /* babel-eslint options */
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": false
   },
   "env": {
     "browser": true,
