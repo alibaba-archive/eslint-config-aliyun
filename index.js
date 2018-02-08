@@ -125,7 +125,11 @@ module.exports = {
     ],
     "quotes": [
       "error",
-      "single"
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
     ],
     "quote-props": [
       "error",
