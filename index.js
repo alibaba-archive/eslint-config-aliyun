@@ -170,7 +170,16 @@ module.exports = {
     ],
     "spaced-comment": [
       "error",
-      "always"
+      "always",
+      {
+        "markers": ["!"]
+      }
+    ],
+    "no-multi-spaces": [
+      "error",
+      {
+        "ignoreEOLComments": true
+      }
     ],
     "react/jsx-tag-spacing": [
       "error",
