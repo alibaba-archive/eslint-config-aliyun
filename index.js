@@ -14,6 +14,11 @@ module.exports = {
     "allowImportExportEverywhere": false,
     "codeFrame": false
   },
+  "settings": {
+    "react": {
+      "version": "15.0"
+    }
+  },
   "env": {
     "browser": true,
     "node": true,
@@ -25,7 +30,8 @@ module.exports = {
     "load": true
   },
   "plugins": [
-    "react"
+    "react",
+    "import"
   ],
   "rules": {
     /* Best Practices */
@@ -135,6 +141,9 @@ module.exports = {
       "error",
       "as-needed"
     ],
+    "jsx-quotes": [
+      "error"
+    ],
     "brace-style": [
       "error"
     ],
@@ -152,6 +161,9 @@ module.exports = {
     "one-var": [
       "error",
       "never"
+    ],
+    "prefer-const": [
+      "error"
     ],
     "no-unneeded-ternary": [
       "error"
@@ -181,12 +193,48 @@ module.exports = {
         "ignoreEOLComments": true
       }
     ],
-    "react/jsx-tag-spacing": [
+    "lines-between-class-members": [
+      "error",
+      "always"
+    ],
+    "padding-line-between-statements": [
       "error",
       {
-        "closingSlash": "never",
-        "beforeSelfClosing": "always",
-        "afterOpening": "never"
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      },
+      {
+        "blankLine": "always",
+        "prev": [
+          "const",
+          "let",
+          "var"
+        ],
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": [
+          "const",
+          "let",
+          "var"
+        ],
+        "next": [
+          "const",
+          "let",
+          "var"
+        ]
+      },
+      {
+        "blankLine": "always",
+        "prev": "import",
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": "import",
+        "next": "import"
       }
     ],
     /* ECMAScript 6 */
@@ -202,7 +250,36 @@ module.exports = {
     "generator-star-spacing": [
       "error",
       "after"
-    ]
+    ],
+    /* react */
+    "react/jsx-props-no-multi-spaces": [
+      "error"
+    ],
+    "react/jsx-tag-spacing": [
+      "error",
+      {
+        "closingSlash": "never",
+        "beforeSelfClosing": "always",
+        "afterOpening": "never",
+        "beforeClosing": "never"
+      }
+    ],
+    /* import */
+    "import/first": [
+      "error"
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          [
+            "builtin",
+            "external",
+            "internal"
+          ]
+        ]
+      }
+    ],
   },
   "extends": ["eslint:recommended", "plugin:react/recommended"]
 };
