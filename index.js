@@ -49,6 +49,16 @@ module.exports = {
       "error"
     ],
     /* Stylistic Issues */
+    "max-len": [
+      "error",
+      {
+        "code": 100
+      }
+    ],
+    "max-lines": [
+      "error",
+      500
+    ],
     "indent": [
       "error",
       2,
