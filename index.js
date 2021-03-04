@@ -1,14 +1,6 @@
 module.exports = {
   "parser": "babel-eslint",
   "parserOptions": {
-    /* espree options */
-    // "ecmaVersion": 6,
-    // "sourceType": 'module',
-    // "ecmaFeatures": {
-    //   "impliedStrict": true,
-    //   "jsx": true,
-    //   "experimentalObjectRestSpread": true
-    // }
     /* babel-eslint options */
     "sourceType": "module",
     "allowImportExportEverywhere": false,
@@ -25,7 +17,8 @@ module.exports = {
     "load": true
   },
   "plugins": [
-    "react"
+    "react",
+    "react-hooks"
   ],
   "rules": {
     /* Best Practices */
@@ -202,7 +195,13 @@ module.exports = {
     "generator-star-spacing": [
       "error",
       "after"
-    ]
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"]
+  "extends": [
+    "eslint:recommended", 
+    "plugin:react/recommended", 
+    "plugin:react-hooks/recommended"
+  ]
 };
