@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-aliyun",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "ESLint shareable config for the Aliyun style",
   "main": "index.js",
   "keywords": [
@@ -25,19 +25,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:HQidea/eslint-config-aliyun.git"
+    "url": "git@github.com:node-honeycomb/eslint-config-aliyun.git"
   },
-  "author": "HQidea <hqidea@yahoo.com>",
+  "contributors": [
+    "HQidea <hqidea@yahoo.com>",
+    "Gorgear <cctv1005s@gmail.com>",
+    "Boscheng <c260363615@gmail.com>"
+  ],
   "bugs": {
-    "url": "https://github.com/HQidea/eslint-config-aliyun/issues"
+    "url": "https://github.com/node-honeycomb/eslint-config-aliyun"
   },
-  "homepage": "https://github.com/HQidea/eslint-config-aliyun",
-  "peerDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.21.0",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0"
-  },
+  "homepage": "https://github.com/node-honeycomb/eslint-config-aliyun",
   "dependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.21.0",
